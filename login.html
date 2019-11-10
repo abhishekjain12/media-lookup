@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Media LookU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
+
+</head>
+<body style="background-color: #3367d6">
+<div class="banner" style="text-align: center">
+    <h2 class="white-text">Media LookU</h2>
+</div>
+
+<form id="sign_in_form" action="" method="post" onsubmit="return validateSignInForm()">
+    <div class="user-card">
+        <h5 style="margin-bottom: 30px">Login to continue</h5>
+        <div class="row">
+            <div class="input-field col s12">
+                <input required name="username" type="text" id="username" autofocus>
+                <label for="username">Email or phone number</label>
+                <span id="checker" style="display: none"></span>
+                <span id="error_no_user" class="error-msg" style="display: none;">Sorry, doesn't recognize that username.</span>
+                <span id="error_username" class="error-msg" style="display:none;">Please enter your username.</span>
+            </div>
+
+            <div class="input-field col s12">
+                <input name="password" type="password" id="password">
+                <label for="password">Password</label>
+                <span id="error_password" class="error-msg" style="display:none;">Please enter your password.</span>
+            </div>
+            <a href="#" class="right">Forgot Password?</a>
+            <div class="input-field col s12">
+                <a type="submit" class="btn user-btn my-blue white-text">Login<i class="material-icons right">&#xE5C8;</i></a>
+            </div>
+        </div>
+        <br/><br/>
+
+        <div class="divider"></div>
+        <h6 class="btn-floating white black-text" style="margin-top: -23px">or</h6>
+
+        <div class="row">
+            <div class="input-field col s12">
+                <a class="btn user-btn facebook white-text">Login with facebook</a>
+            </div>
+            <div class="input-field col s12">
+                <a class="btn user-btn google-p white-text">Login with Google</a>
+            </div>
+        </div>
+    </div>
+
+</form>
+<div style="text-align: center;margin-bottom: 20px">
+    <a href="sign-up.html" class="center white-text">Create an account</a>
+</div>
+
+<footer class="page-footer my-blue">
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col m8 l8 s12">
+                    <a class="grey-text text-lighten-4">Help</a>
+                    <a class="grey-text text-lighten-4">Privacy</a>
+                    <a class="grey-text text-lighten-4">Terms and conditions</a>
+                    <a class="grey-text text-lighten-4">About</a>
+                </div>
+                <div class="col s12 l4 m4">
+                    <div class="right"> © 2017 Media LookU | All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
